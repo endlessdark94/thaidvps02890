@@ -38,6 +38,8 @@ Partial Class frmQLKH
         Me.btnDEL = New System.Windows.Forms.Button()
         Me.dgvQLKH = New System.Windows.Forms.DataGridView()
         Me.btnRefresh = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         CType(Me.dgvQLKH, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -155,6 +157,8 @@ Partial Class frmQLKH
         '
         'dgvQLKH
         '
+        Me.dgvQLKH.AllowUserToAddRows = False
+        Me.dgvQLKH.AllowUserToDeleteRows = False
         Me.dgvQLKH.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Me.dgvQLKH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvQLKH.GridColor = System.Drawing.SystemColors.Window
@@ -174,11 +178,21 @@ Partial Class frmQLKH
         Me.btnRefresh.Text = "Refresh"
         Me.btnRefresh.UseVisualStyleBackColor = True
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(383, 21)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(121, 30)
+        Me.Button1.TabIndex = 16
+        Me.Button1.Text = "Export to PDF"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'frmQLKH
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(516, 406)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnRefresh)
         Me.Controls.Add(Me.dgvQLKH)
         Me.Controls.Add(Me.btnDEL)
@@ -219,4 +233,6 @@ Partial Class frmQLKH
     Friend WithEvents btnDEL As System.Windows.Forms.Button
     Friend WithEvents dgvQLKH As System.Windows.Forms.DataGridView
     Friend WithEvents btnRefresh As System.Windows.Forms.Button
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents SaveFileDialog1 As System.Windows.Forms.SaveFileDialog
 End Class
