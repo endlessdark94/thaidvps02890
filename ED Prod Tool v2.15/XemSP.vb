@@ -36,7 +36,7 @@ Public Class frmXemSP
         con.ConnectionString = SQLControl.Sqlconstring
         con.Open()
         cmd.Connection = con
-        cmd.CommandText = "select SANPHAM.MASP ,SANPHAM.TENSP, LOAISANPHAM.MALOAI, LOAISANPHAM.TENLOAI, SANPHAM.SOLUONG from SANPHAM inner join LOAISANPHAM on SANPHAM.MASP = LOAISANPHAM.MASP where SANPHAM.MASP='" & txtSearch2.Text & "'"
+        cmd.CommandText = "select SANPHAM.MASP ,SANPHAM.TENSP, LOAISANPHAM.MALOAI, LOAISANPHAM.TENLOAI, SANPHAM.SOLUONG from SANPHAM inner join LOAISANPHAM on SANPHAM.MASP = LOAISANPHAM.MASP where SANPHAM.MASP like '" & txtSearch2.Text & "' or TENSP like '%" & txtSearch2.Text & "%' "
         Dim dr As SqlDataReader = cmd.ExecuteReader()
         Try
             If txtSearch2.Text = "" Then

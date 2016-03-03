@@ -12,7 +12,7 @@ Public Class frmXemKH
         con.ConnectionString = SQLControl.Sqlconstring
         con.Open()
         cmd.Connection = con
-        cmd.CommandText = "select * from KHACHHANG where MAKH='" & txtSearch.Text & "'"
+        cmd.CommandText = "select * from KHACHHANG where MAKH like '" & txtSearch.Text & "' or TENKH like '%" & txtSearch.Text & "%' "
         Dim dr As SqlDataReader = cmd.ExecuteReader()
         Try
             If txtSearch.Text = "" Then
