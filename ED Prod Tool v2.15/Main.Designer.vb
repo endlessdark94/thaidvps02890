@@ -36,6 +36,8 @@ Partial Class frmMain
         Me.mniHomepage = New System.Windows.Forms.ToolStripMenuItem()
         Me.mniAbout = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnsMain = New System.Windows.Forms.MenuStrip()
+        Me.HóaĐơnToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.XemHóaĐơnToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.tosMain = New System.Windows.Forms.ToolStrip()
         Me.tsbAbout = New System.Windows.Forms.ToolStripButton()
         Me.tsbMinimize = New System.Windows.Forms.ToolStripButton()
@@ -51,6 +53,7 @@ Partial Class frmMain
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.tsbExitt = New System.Windows.Forms.ToolStripButton()
+        Me.QuảnLíHóaĐơnToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.stsMain.SuspendLayout()
         Me.mnsMain.SuspendLayout()
         Me.tosMain.SuspendLayout()
@@ -140,12 +143,25 @@ Partial Class frmMain
         'mnsMain
         '
         Me.mnsMain.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.mnsMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mniHethong, Me.mniSupp, Me.mniProm})
+        Me.mnsMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mniHethong, Me.mniSupp, Me.HóaĐơnToolStripMenuItem, Me.mniProm})
         Me.mnsMain.Location = New System.Drawing.Point(0, 0)
         Me.mnsMain.Name = "mnsMain"
         Me.mnsMain.Size = New System.Drawing.Size(712, 24)
         Me.mnsMain.TabIndex = 0
         Me.mnsMain.Text = "mnsMain"
+        '
+        'HóaĐơnToolStripMenuItem
+        '
+        Me.HóaĐơnToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.XemHóaĐơnToolStripMenuItem, Me.QuảnLíHóaĐơnToolStripMenuItem})
+        Me.HóaĐơnToolStripMenuItem.Name = "HóaĐơnToolStripMenuItem"
+        Me.HóaĐơnToolStripMenuItem.Size = New System.Drawing.Size(67, 20)
+        Me.HóaĐơnToolStripMenuItem.Text = "Hóa Đơn"
+        '
+        'XemHóaĐơnToolStripMenuItem
+        '
+        Me.XemHóaĐơnToolStripMenuItem.Name = "XemHóaĐơnToolStripMenuItem"
+        Me.XemHóaĐơnToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
+        Me.XemHóaĐơnToolStripMenuItem.Text = "Xem Hóa Đơn"
         '
         'tosMain
         '
@@ -270,6 +286,12 @@ Partial Class frmMain
         Me.tsbExitt.Size = New System.Drawing.Size(23, 22)
         Me.tsbExitt.Text = "Exit"
         '
+        'QuảnLíHóaĐơnToolStripMenuItem
+        '
+        Me.QuảnLíHóaĐơnToolStripMenuItem.Name = "QuảnLíHóaĐơnToolStripMenuItem"
+        Me.QuảnLíHóaĐơnToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
+        Me.QuảnLíHóaĐơnToolStripMenuItem.Text = "Quản Lí Hóa Đơn"
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -331,4 +353,7 @@ Partial Class frmMain
     Friend WithEvents ToolStrip1 As System.Windows.Forms.ToolStrip
     Friend WithEvents tsbExitt As System.Windows.Forms.ToolStripButton
     Friend WithEvents QuảnLýSảnPhẩmToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents HóaĐơnToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents XemHóaĐơnToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents QuảnLíHóaĐơnToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

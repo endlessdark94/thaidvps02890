@@ -124,6 +124,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="QLHD.Designer.vb">
+      <DependentUpon>QLHD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QLHD.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="QLKH.Designer.vb">
       <DependentUpon>QLKH.vb</DependentUpon>
     </Compile>
@@ -137,6 +143,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SQLControl.vb" />
+    <Compile Include="XemHD.Designer.vb">
+      <DependentUpon>XemHD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="XemHD.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="XemKH.Designer.vb">
       <DependentUpon>XemKH.vb</DependentUpon>
     </Compile>
@@ -166,11 +178,17 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="QLHD.resx">
+      <DependentUpon>QLHD.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="QLKH.resx">
       <DependentUpon>QLKH.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QLSP.resx">
       <DependentUpon>QLSP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XemHD.resx">
+      <DependentUpon>XemHD.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="XemKH.resx">
       <DependentUpon>XemKH.vb</DependentUpon>

@@ -131,4 +131,12 @@ Public Class frmMain
     Private Sub QuảnLýSảnPhẩmToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles QuảnLýSảnPhẩmToolStripMenuItem.Click
         frmQLSP.Show()
     End Sub
+
+    Private Sub XemHóaĐơnToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles XemHóaĐơnToolStripMenuItem.Click
+        frmXemHD.Show()
+    End Sub
+
+    Private Sub QuảnLíHóaĐơnToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles QuảnLíHóaĐơnToolStripMenuItem.Click
+        frmQLHD.Show()
+    End Sub
 End Class
